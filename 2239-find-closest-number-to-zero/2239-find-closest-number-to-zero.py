@@ -6,12 +6,11 @@ class Solution(object):
         :rtype: int
         """
         closest=nums[0]
+        
+        for num in nums :
 
-        for num in nums:
-            if abs(num)<abs(closest):
+            if abs(num) < abs(closest):
                 closest=num
             elif abs(num)==abs(closest):
-                closest=max(closest,num)
-
-
+                closest = max(closest,num)
         return closest
