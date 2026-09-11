@@ -5,7 +5,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        closest=float("inf")
+        closest=nums[0]
 
         for num in nums:
             if abs(num)<abs(closest):
